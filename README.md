@@ -1,3 +1,5 @@
+#Storing Big Data Part 1 
+
 The goal of this project was to recreate an on-premise to cloud data migration scenario using AWS services. Specifically, I configured a connection between an on-premise file server and a cloud-based object storage repository to facilitate seamless data transfer. 
 
 To accomplish this, I leveraged AWS CloudFormation and YAML templates to provision the necessary computing infrastructure, including an on-premise VPC with public and private subnets, security groups, a Windows-based "corporate" machine, and a Linux-based file server instance. 
