@@ -1,4 +1,4 @@
-#Storing Big Data Part 1 
+Storing Big Data Part 1 
 
 The goal of this project was to recreate an on-premise to cloud data migration scenario using AWS services. Specifically, I configured a connection between an on-premise file server and a cloud-based object storage repository to facilitate seamless data transfer. 
 
