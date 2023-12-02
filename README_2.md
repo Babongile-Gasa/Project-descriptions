@@ -1,9 +1,11 @@
 Moving Big Data
 
-The goal of this project was to develop a robust data pipeline for migrating historical stock market data from an on-premise system to the AWS cloud. The pipeline extracts data from 1000 CSV files, transforms it into a consolidated format, and loads it into a PostgreSQL database within Amazon RDS.
+The goal of this project was to develop an automated data pipeline to ingest, process, and load on-premise stock market data into the AWS cloud. The pipeline extracts raw CSV files containing historical trading data for 1000 companies, transforms this into a consolidated dataset, and loads it into an Amazon RDS PostgreSQL database.
 
-The pipeline was built using Airflow and runs on an Amazon EC2 instance. It leverages various AWS services including S3 for storage, RDS for the database, and SNS for notifications. The raw CSV data is processed using a Python script before loading into the target database tables that I configured. 
-To enable automation, the pipeline is triggered by an event-driven AWS Lambda function which activates whenever new files are added to a monitored S3 bucket. Email alerts provide notifications on the success or failure of pipeline runs.
+To enable this batch ETL process, I configured underlying AWS services including Amazon S3 for storage, EC2 for processing, RDS for the database, and SNS for notifications. These components were orchestrated into an event-driven Airflow workflow running in Docker on the EC2 node.
+The pipeline is triggered via an object upload to an S3 bucket monitored by a Lambda function. On invocation, Airflow performs the data transformations in Python and uses pgAdmin to populate the PostgreSQL data tables. Email alerts inform of success or failure.
+
+In summary, this project demonstrated proficiency in designing modular data pipelines leveraging cloud services. The serverless architecture minimizes overhead while enabling scalability. Automating the workflow through event triggers ensures new data will load without manual intervention. 
 
 ![end-to-end-pipeline](https://github.com/Babongile-Gasa/Project-descriptions/assets/124687095/74dad609-296d-4237-9b5c-5b3524ffac6d)
 
