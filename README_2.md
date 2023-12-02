@@ -4,3 +4,6 @@ The goal of this project was to develop a robust data pipeline for migrating his
 
 The pipeline was built using Airflow and runs on an Amazon EC2 instance. It leverages various AWS services including S3 for storage, RDS for the database, and SNS for notifications. The raw CSV data is processed using a Python script before loading into the target database tables that I configured. 
 To enable automation, the pipeline is triggered by an event-driven AWS Lambda function which activates whenever new files are added to a monitored S3 bucket. Email alerts provide notifications on the success or failure of pipeline runs.
+
+![end-to-end-pipeline](https://github.com/Babongile-Gasa/Project-descriptions/assets/124687095/74dad609-296d-4237-9b5c-5b3524ffac6d)
+
