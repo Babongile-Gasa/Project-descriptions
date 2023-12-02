@@ -8,4 +8,5 @@ Finally, I automated ongoing data quality monitoring by implementing the Deequ l
 
 The workflow developed enables my team to identify and resolve data quality issues as part of an automated ingestion pipeline. By front-loading this process, higher quality training data can be reliably supplied to downstream trading algorithm development.
 
+![DataQuality](https://github.com/Babongile-Gasa/Project-descriptions/assets/124687095/076cc2c1-8f44-4fbb-b31c-b97a004a86a3)
 
